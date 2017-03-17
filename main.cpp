@@ -132,7 +132,6 @@ int main(){
         }
 
         ++turno;
-        cout << "counter turno " << turno << endl;
 
         if(benders[index] -> getDefensa() <= 0){//para detectar si alguien gano
           cout << "Gano el bender 2" << endl;
