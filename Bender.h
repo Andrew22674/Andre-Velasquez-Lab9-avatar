@@ -1,4 +1,10 @@
 #pragma once
+#include "AirBender.h"
+#include "EarthBender.h"
+#include "WaterBender.h"
+#include "FireBender.h"
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
