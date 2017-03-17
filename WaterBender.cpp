@@ -4,7 +4,7 @@ WaterBender::WaterBender(){
 
 }
 
-WaterBender::WaterBender(int defensa, int ofensa, int fuerza, int suerte) : Bender(defensa, ofensa, fuerza, suerte){
+WaterBender::WaterBender(double defensa, double ofensa, double fuerza, double suerte) : Bender(defensa, ofensa, fuerza, suerte){
 
 }
 
@@ -17,7 +17,8 @@ void WaterBender::AtaqueEspecial(Bender* bender){
 
   }
   if(typeid(*bender).name() == typeid(EarthBender).name()){
-
+    double attack = ofensa + (ofensa * 0.25);
+    bender -> setDefensa((bender -> getDefensa()) - attack);
   }
   if(typeid(*bender).name() == typeid(AirBender).name()){
 

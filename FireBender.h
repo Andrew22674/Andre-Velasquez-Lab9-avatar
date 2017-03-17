@@ -7,7 +7,7 @@
 class FireBender : public Bender{
 public:
   FireBender();
-  FireBender(int, int, int, int);
+  FireBender(double, double, double, double);
   virtual void Ataque(Bender*);
   virtual void AtaqueEspecial(Bender*);
 };

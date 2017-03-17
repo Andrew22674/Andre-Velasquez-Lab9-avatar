@@ -7,7 +7,7 @@
 class EarthBender : public Bender{
 public:
   EarthBender();
-  EarthBender(int, int, int, int);
+  EarthBender(double, double, double, double);
   virtual void Ataque(Bender*);
   virtual void AtaqueEspecial(Bender*);
 };

@@ -7,7 +7,7 @@
 class AirBender : public Bender{
 public:
   AirBender();
-  AirBender(int, int, int, int);
+  AirBender(double, double, double, double);
   virtual void Ataque(Bender*);
   virtual  void AtaqueEspecial(Bender*);
 };

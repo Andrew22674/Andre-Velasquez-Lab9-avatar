@@ -7,7 +7,7 @@
 class WaterBender : public Bender{
 public:
   WaterBender();
-  WaterBender(int, int, int, int);
+  WaterBender(double, double, double, double);
   virtual void Ataque(Bender*);
   virtual void AtaqueEspecial(Bender*);
 };
