@@ -10,4 +10,5 @@ public:
   WaterBender(double, double, double, double);
   virtual void Ataque(Bender*);
   virtual void AtaqueEspecial(Bender*);
+  void Heal();
 };

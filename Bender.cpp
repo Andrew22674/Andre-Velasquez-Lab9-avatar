@@ -39,6 +39,10 @@ void Bender::setDefensa(int def){
   defensa = def;
 }
 
+void Bender::setFuerza(int fue){
+  fuerza = fue;
+}
+
 Bender::~Bender(){
 
 }

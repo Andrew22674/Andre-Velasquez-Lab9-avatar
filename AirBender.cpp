@@ -9,7 +9,7 @@ AirBender::AirBender(double defensa, double ofensa, double fuerza, double suerte
 }
 
 void AirBender::Ataque(Bender* bender){
-
+  bender -> setDefensa((bender -> getDefensa()) - ofensa);
 }
 
 void AirBender::AtaqueEspecial(Bender* bender){
@@ -17,10 +17,5 @@ void AirBender::AtaqueEspecial(Bender* bender){
     double attack = ofensa + (ofensa * 0.15);
     bender -> setDefensa((bender -> getDefensa()) - attack);
   }
-  if(typeid(*bender).name() == typeid(EarthBender).name()){
 
-  }
-  if(typeid(*bender).name() == typeid(WaterBender).name()){
-
-  }
 }

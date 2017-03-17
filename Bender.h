@@ -22,5 +22,6 @@ public:
   virtual int getFuerza();
   virtual int getSuerte();
   virtual void setDefensa(int);
+  virtual void setFuerza(int);
   virtual ~Bender();
 };
