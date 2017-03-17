@@ -31,6 +31,11 @@ int main(){
       cin >> def;
       cout << "Ingrese fuerza" << endl;
       cin >> fuer;
+
+      while(fuer > 60){
+        cout << "La fuerza no puede ser mayor a 60" << endl;
+        cin >> fuer;
+      }
       cout << "Ingrese suerte" << endl;
       cin >> suer;
 
@@ -131,10 +136,12 @@ int main(){
 
         if(benders[index] -> getDefensa() <= 0){//para detectar si alguien gano
           cout << "Gano el bender 2" << endl;
+          benders[index2] -> setFuerza(30);
           seguir = false;
         }
         if(benders[index2] -> getDefensa() <= 0){
           cout << "Gano el bender 1" << endl;
+          benders[index] -> setFuerza(30);
           seguir = false;
         }
 
