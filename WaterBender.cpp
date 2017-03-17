@@ -8,10 +8,18 @@ WaterBender::WaterBender(int defensa, int ofensa, int fuerza, int suerte) : Bend
 
 }
 
-WaterBender::Ataque(Bender* bender){
+void WaterBender::Ataque(Bender* bender){
 
 }
 
-WaterBender::AtaqueEspecial(Bender* bender){
+void WaterBender::AtaqueEspecial(Bender* bender){
+  if(typeid(*bender).name() == typeid(FireBender).name()){
 
+  }
+  if(typeid(*bender).name() == typeid(EarthBender).name()){
+
+  }
+  if(typeid(*bender).name() == typeid(AirBender).name()){
+
+  }
 }

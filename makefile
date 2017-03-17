@@ -1,23 +1,23 @@
-Lab9: Main.o Bender.o AirBender.o EarthBender.o WaterBender.o FireBender.o
-	g++ Main.o Bender.o AirBender.o EarthBender.o WaterBender.o FireBender.o -o Lab9
+Lab9: main.o Bender.o AirBender.o EarthBender.o WaterBender.o FireBender.o
+	g++ main.o Bender.o AirBender.o EarthBender.o WaterBender.o FireBender.o -o Lab9
 
-Main.o: Main.cpp Bender.h AirBender.h EarthBender.h WaterBender.h FireBender.h
-	g++ Main.cpp
+main.o: main.cpp Bender.h AirBender.h EarthBender.h WaterBender.h FireBender.h
+	g++ -c main.cpp
 
 Bender.o: Bender.cpp Bender.h
-	g++ Bender.cpp
+	g++ -c Bender.cpp
 
 AirBender.o: AirBender.cpp AirBender.h Bender.h
-	g++ AirBender.cpp
+	g++ -c AirBender.cpp
 
 EarthBender.o: EarthBender.cpp EarthBender.h Bender.h
-	g++ EarthBender.cpp
+	g++ -c EarthBender.cpp
 
 WaterBender.o: WaterBender.cpp WaterBender.h Bender.h
-	g++ WaterBender.cpp
+	g++ -c WaterBender.cpp
 
 FireBender.o: FireBender.cpp FireBender.cpp Bender.h
-	g++ FireBender.cpp
+	g++ -c FireBender.cpp
 
 clean:
 	rm *.o Lab9

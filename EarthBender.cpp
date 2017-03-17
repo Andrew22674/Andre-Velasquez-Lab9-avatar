@@ -8,10 +8,18 @@ EarthBender::EarthBender(int defensa, int ofensa, int fuerza, int suerte) : Bend
 
 }
 
-EarthBender::Ataque(Bender* bender){
+void EarthBender::Ataque(Bender* bender){
 
 }
 
-EarthBender::AtaqueEspecial(Bender* bender){
+void EarthBender::AtaqueEspecial(Bender* bender){
+  if(typeid(*bender).name() == typeid(FireBender).name()){
 
+  }
+  if(typeid(*bender).name() == typeid(AirBender).name()){
+
+  }
+  if(typeid(*bender).name() == typeid(WaterBender).name()){
+
+  }
 }

@@ -34,3 +34,7 @@ int Bender::getFuerza(){
 int Bender::getSuerte(){
   return suerte;
 }
+
+Bender::~Bender(){
+  
+}
